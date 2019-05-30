@@ -45,7 +45,7 @@ position: relative;
 #background {
   background: white;
   width: 1000px;
-  height: 1500px;
+  height: 500px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -141,11 +141,11 @@ function ensureBounds(sprite, ignoreY) {
   if (!ignoreY && sprite.y < 20) {
     sprite.y = 20;
   }
-  if (sprite.x + sprite.w > 480) {
-    sprite.x = 480 - sprite.w;
+  if (sprite.x + sprite.w > 900) {
+    sprite.x = 900 - sprite.w;
   }
-  if (!ignoreY && sprite.y + sprite.h > 480) {
-    sprite.y = 480 - sprite.h;
+  if (!ignoreY && sprite.y + sprite.h > 900) {
+    sprite.y = 900 - sprite.h;
   }
 }
 
