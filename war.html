@@ -188,7 +188,7 @@ function checkCollisions() {
       score += 100;
     } else if (intersects(hero, enemies[i])) {
       gameOver();
-    } else if (enemies[i].y + enemies[i].h >= 500) {
+    } else if (enemies[i].y + enemies[i].h >= 630) {
       var element = document.getElementById(enemies[i].element);
       element.style.visibility = 'hidden';
       element.parentNode.removeChild(element);
