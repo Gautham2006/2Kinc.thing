@@ -218,7 +218,7 @@ function showSprites() {
 function updatePositions() {
   for (var i = 0; i < enemies.length; i++) {
     enemies[i].y += 4;
-    enemies[i].x += getRandom(7) - 3;
+    enemies[i].x += getRandom(15) - 3;
     ensureBounds(enemies[i], true);
   }
   laser.y -= 12;
